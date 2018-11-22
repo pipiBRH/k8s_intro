@@ -4,8 +4,8 @@ metadata:
   name: wordpress-db
 spec:
   ports:
-  - port: 3306
-    protocol: TCP
+    - port: 3306
+      protocol: TCP
   selector:
     app: wordpress-db
   type: NodePort

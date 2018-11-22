@@ -1,8 +1,9 @@
 kind: StorageClass
 apiVersion: storage.k8s.io/v1beta1
 metadata:
-  name: standard
-provisioner: kubernetes.io/aws-ebs
+  # name: standard
+  name: ssd
+provisioner: kubernetes.io/gce-pd
 parameters:
-  type: gp2
-  zone: eu-west-1a
+  type: pd-ssd
+  zone: asia-east1-b
